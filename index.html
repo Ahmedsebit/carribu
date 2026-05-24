@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carribu — School Transport, Reimagined</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Kente-inspired top border -->
+<div class="kente-border"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="logo">Carribu<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+            <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <h1>Every Child's Journey, <span class="highlight">Safe & Seen</span></h1>
+            <p class="hero-subtitle">The smart school transport platform that connects parents, drivers, and schools — so every ride is tracked, every child accounted for.</p>
+            <p class="hero-swahili">🌍 Karibu — Welcome to peace of mind.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">🚀 Request a Demo</a>
+                <a href="#features" class="btn-secondary">▶ See Features</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup secondary">
+                <div class="phone-screen">
+                    <div class="phone-status-bar" style="background:var(--leaf)">👨‍✈️ Driver App</div>
+                    <div class="phone-app-content">
+                        <div class="phone-header">
+                            <h3>Today's Trip</h3>
+                            <p>Route A — Morning</p>
+                        </div>
+                        <div class="phone-card">
+                            <div class="phone-card-icon" style="background:#E8F5E9">✅</div>
+                            <div class="phone-card-text"><h4>Amani K.</h4><p>Picked up at 7:15 AM</p></div>
+                        </div>
+                        <div class="phone-card">
+                            <div class="phone-card-icon" style="background:#FFF3E0">⏳</div>
+                            <div class="phone-card-text"><h4>Zuri M.</h4><p>Next stop — 2 min away</p></div>
+                        </div>
+                        <div class="phone-card">
+                            <div class="phone-card-icon" style="background:#FFEBEE">🔴</div>
+                            <div class="phone-card-text"><h4>Jabari O.</h4><p>Absent today</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="phone-status-bar">🎒 Carribu Parent</div>
+                    <div class="phone-app-content">
+                        <div class="phone-header">
+                            <h3>Live Tracking</h3>
+                            <p>Bus is on the way!</p>
+                        </div>
+                        <div class="phone-map-placeholder">
+                            <div class="map-road"></div>
+                            <div class="map-bus-dot">🚌</div>
+                        </div>
+                        <div class="phone-card">
+                            <div class="phone-card-icon" style="background:#E3F2FD">📍</div>
+                            <div class="phone-card-text"><h4>ETA: 6 minutes</h4><p>Approaching Kilimani Stop</p></div>
+                        </div>
+                        <div class="phone-card">
+                            <div class="phone-card-icon" style="background:#FFF3E0">📞</div>
+                            <div class="phone-card-text"><h4>Driver: Joseph M.</h4><p>Tap to call or message</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TODO: Uncomment stats section when real data is available -->
+<!-- Stats Bar
+<div class="kente-border"></div>
+<div class="stats-bar">
+    <div class="stats-inner">
+        <div class="stat-item reveal"><h3 id="statSchools">0</h3><p>Schools Onboarded</p></div>
+        <div class="stat-item reveal"><h3 id="statStudents">0</h3><p>Students Transported</p></div>
+        <div class="stat-item reveal"><h3 id="statTrips">0</h3><p>Trips Completed</p></div>
+        <div class="stat-item reveal"><h3 id="statUptime">0</h3><p>Uptime Reliability</p></div>
+    </div>
+</div>
+-->
+
+<!-- Features -->
+<section class="section features-section" id="features">
+    <div class="section-header reveal">
+        <span class="section-tag">✨ Features</span>
+        <h2>Everything Your School Transport Needs</h2>
+        <p>Three powerful apps, one seamless platform — built for the way African schools move.</p>
+    </div>
+
+    <div class="feature-tabs reveal">
+        <button class="feature-tab active" data-tab="parents">👨‍👩‍👧 For Parents</button>
+        <button class="feature-tab" data-tab="drivers">🚐 For Drivers</button>
+        <button class="feature-tab" data-tab="admins">🏫 For Schools</button>
+    </div>
+
+    <!-- Parent Features -->
+    <div class="feature-panel active" id="panel-parents">
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon parent">📍</div>
+                <h3>Live Bus Tracking</h3>
+                <p>Watch your child's bus in real time on the map. See speed, location, and driver details — right from your phone.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon parent">⏱️</div>
+                <h3>ETA to Your Stop</h3>
+                <p>Know exactly when the bus will arrive at your child's pickup point. No more waiting and wondering.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon parent">💬</div>
+                <h3>Chat with Driver</h3>
+                <p>Message your child's driver or coordinator directly. Get real-time updates and arrival notifications.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon parent">📞</div>
+                <h3>One-Tap Call Driver</h3>
+                <p>Need to reach the driver urgently? Tap once to call them directly from the app.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon parent">🚫</div>
+                <h3>Report Absence</h3>
+                <p>Child staying home? Notify the driver instantly so they can skip the stop and stay on schedule.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon parent">👧</div>
+                <h3>View Children & Routes</h3>
+                <p>See all your children's profiles, assigned routes, pickup points, and transport details in one place.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Driver Features -->
+    <div class="feature-panel" id="panel-drivers">
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon driver">📋</div>
+                <h3>Today's Trips</h3>
+                <p>See all scheduled trips for the day at a glance. Start trips with one tap and manage your schedule effortlessly.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon driver">✅</div>
+                <h3>Student Check-In/Out</h3>
+                <p>Mark each student as picked up, dropped off, or absent. Every status is logged and visible to parents and school.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon driver">📡</div>
+                <h3>Live GPS Broadcasting</h3>
+                <p>Your location is automatically shared during active trips so parents and schools always know where you are.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon driver">🗺️</div>
+                <h3>Navigation to Next Stop</h3>
+                <p>Get turn-by-turn directions to the next pickup or drop-off point. Never miss a stop.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon driver">💬</div>
+                <h3>Message Parents</h3>
+                <p>Chat with parents and coordinators. Send arrival alerts, respond to absence reports, and stay connected.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon driver">🛣️</div>
+                <h3>My Routes & Students</h3>
+                <p>View assigned routes, vehicle info, and the ordered list of students at each stop.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Features -->
+    <div class="feature-panel" id="panel-admins">
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon admin">📊</div>
+                <h3>School Dashboard</h3>
+                <p>See total vehicles, students, routes, drivers, and today's trips — all at a glance from your admin panel.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon admin">🎓</div>
+                <h3>Student Management</h3>
+                <p>Add, edit, search, and manage students. Track grades, pickup points, and parent links in one system.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon admin">🗺️</div>
+                <h3>Route Planning</h3>
+                <p>Create and edit routes, assign vehicles and drivers, order pickup stops, and manage morning & afternoon runs.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon admin">🚐</div>
+                <h3>Fleet Management</h3>
+                <p>Track every vehicle's capacity, service dates, insurance expiry, and operational status.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon admin">📅</div>
+                <h3>Trip Scheduling</h3>
+                <p>Schedule trips, start/end them, filter by date or status, and review detailed trip logs and histories.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon admin">🏫</div>
+                <h3>Multi-School Support</h3>
+                <p>Manage multiple schools from one platform. Every record is securely scoped to the right school.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="kente-border"></div>
+
+<!-- How It Works -->
+<section class="section how-it-works" id="how-it-works">
+    <div class="section-header reveal">
+        <span class="section-tag">🔄 How It Works</span>
+        <h2>Up and Running in Days, Not Months</h2>
+        <p>Getting started with Carribu is simple — here's how.</p>
+    </div>
+
+    <div class="steps-container">
+        <div class="step reveal">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Register Your School</h3>
+                <p>Sign up online and set up your school profile. Add your vehicles, routes, and staff. We'll help you configure everything.</p>
+            </div>
+        </div>
+        <div class="step reveal">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Enrol Students & Assign Routes</h3>
+                <p>Import your students, assign them to routes and pickup points. Link parents to their children's profiles for instant access.</p>
+            </div>
+        </div>
+        <div class="step reveal">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Drivers Hit the Road</h3>
+                <p>Drivers download the app, log in, and see their daily trips. GPS tracking starts automatically — every pickup is logged.</p>
+            </div>
+        </div>
+        <div class="step reveal">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>Parents Track in Real Time</h3>
+                <p>Parents see their child's bus live on the map, get ETA updates, and communicate directly with the driver. Peace of mind, delivered.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Safety & Trust -->
+<section class="section safety-section" id="safety">
+    <div class="section-header reveal">
+        <span class="section-tag">🛡️ Safety & Trust</span>
+        <h2>Built with Safety at the Core</h2>
+        <p>Every feature is designed to keep children safe and give parents confidence.</p>
+    </div>
+
+    <div class="safety-grid">
+        <div class="safety-card reveal">
+            <div class="feature-icon">🔐</div>
+            <h3>Role-Based Access</h3>
+            <p>Five secure roles — super admin, admin, coordinator, driver, and parent — each with carefully scoped permissions.</p>
+        </div>
+        <div class="safety-card reveal">
+            <div class="feature-icon">📝</div>
+            <h3>Complete Audit Trail</h3>
+            <p>Every check-in, check-out, and absence is logged with timestamps. Full accountability for every journey.</p>
+        </div>
+        <div class="safety-card reveal">
+            <div class="feature-icon">🏫</div>
+            <h3>School-Level Tenancy</h3>
+            <p>Data is strictly isolated per school. No cross-school access. Your information stays yours.</p>
+        </div>
+        <div class="safety-card reveal">
+            <div class="feature-icon">🔑</div>
+            <h3>Secure Authentication</h3>
+            <p>JWT-based authentication keeps every session secure. Tokens are encrypted and auto-managed.</p>
+        </div>
+        <div class="safety-card reveal">
+            <div class="feature-icon">📍</div>
+            <h3>Real-Time Visibility</h3>
+            <p>Live GPS tracking means every trip is visible. Know where the bus is — always.</p>
+        </div>
+        <div class="safety-card reveal">
+            <div class="feature-icon">🚨</div>
+            <h3>Instant Alerts</h3>
+            <p>Arrival notifications, absence reports, and system alerts keep everyone informed in real time.</p>
+        </div>
+    </div>
+</section>
+
+<div class="kente-border"></div>
+
+<!-- TODO: Uncomment testimonials section when real testimonials are collected -->
+<!-- Testimonials
+<section class="section testimonial-section" id="testimonials">
+    <div class="section-header reveal">
+        <span class="section-tag">💬 Testimonials</span>
+        <h2>Trusted by Schools Across Africa</h2>
+        <p>Here's what educators, parents, and drivers are saying about Carribu.</p>
+    </div>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+            <p>Before Carribu, I would call the driver every morning to check if the bus had left. Now I just open the app and see the bus moving on the map. It's such a relief!</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">W</div>
+                <div class="author-info"><h4>Wanjiku N.</h4><span>Parent, Nairobi Academy</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card reveal">
+            <p>Managing 12 buses used to be chaos. With Carribu's dashboard, I see every route, every trip, every student status in real time. It's transformed our transport department.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">K</div>
+                <div class="author-info"><h4>Kwame A.</h4><span>Transport Coordinator, Accra International</span></div>
+            </div>
+        </div>
+        <div class="testimonial-card reveal">
+            <p>The check-in system makes my job so much easier. Parents know exactly when their child was picked up, and the school has a complete record. No more disputes.</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">J</div>
+                <div class="author-info"><h4>Joseph M.</h4><span>Driver, Dar es Salaam Prep</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+    <div class="cta-inner reveal">
+        <h2>Ready to Transform Your School Transport?</h2>
+        <p>Join the schools across Africa that trust Carribu to keep their students safe on every journey.</p>
+        <a href="mailto:hello@carribu.app" class="btn-primary">🌍 Get Started Today</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="kente-border"></div>
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="#" class="logo">Carribu<span>.</span></a>
+            <p>Smart school transport for Africa. Connecting parents, drivers, and schools to keep every child safe on every journey.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#safety">Safety</a>
+            <a href="#contact">Pricing</a>
+        </div>
+        <div class="footer-col">
+            <h4>Apps</h4>
+            <a href="#">Parent App</a>
+            <a href="#">Driver App</a>
+            <a href="#">Admin Portal</a>
+            <a href="#">API Docs</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="mailto:hello@carribu.app">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Carribu. All rights reserved. Made with ❤️ in Africa.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">f</a>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
