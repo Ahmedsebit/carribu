@@ -22,19 +22,34 @@ git clone https://github.com/Ahmedsebit/carribu.git
 cd carribu
 ```
 
-### 2. Install dependencies
+### 2. Configure environment variables
+
+Copy the example env file and update values as needed:
+
+```bash
+cp .env.example .env
+```
+
+| Variable         | Description                                   | Default                        |
+| ---------------- | --------------------------------------------- | ------------------------------ |
+| `VITE_API_URL`   | Backend API base URL (for APK download links)  | `http://localhost:5000/api`    |
+| `VITE_ADMIN_URL` | Admin portal URL                               | `https://admin.carribu.app`   |
+
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Start the development server
+### 4. Start the development server
 
 ```bash
 npm run dev
 ```
 
 The app will be available at [http://localhost:5173](http://localhost:5173). Changes to source files are reflected instantly via HMR.
+
+> **Note:** The Parent App and Driver App download links in the footer are fetched from the backend at `GET /api/app-versions/latest/parent` and `GET /api/app-versions/latest/driver`. The Admin Portal link is read from `VITE_ADMIN_URL`. If the backend is unavailable, all links gracefully fall back to `#` placeholders.
 
 ## Available Scripts
 

@@ -1,32 +1,4 @@
-const footerColumns = [
-  {
-    title: 'Product',
-    links: [
-      { label: 'Features', href: '#features' },
-      { label: 'How It Works', href: '#how-it-works' },
-      { label: 'Safety', href: '#safety' },
-      { label: 'Pricing', href: '#contact' },
-    ],
-  },
-  {
-    title: 'Apps',
-    links: [
-      { label: 'Parent App', href: '#' },
-      { label: 'Driver App', href: '#' },
-      { label: 'Admin Portal', href: '#' },
-      { label: 'API Docs', href: '#' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { label: 'About Us', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Contact', href: 'mailto:hello@carribu.app' },
-    ],
-  },
-]
+import useAppLinks from '../hooks/useAppLinks'
 
 const socialLinks = [
   { label: 'Twitter', icon: '𝕏' },
@@ -36,6 +8,38 @@ const socialLinks = [
 ]
 
 export default function Footer() {
+  const { adminUrl, parentApp, driverApp } = useAppLinks()
+
+  const footerColumns = [
+    {
+      title: 'Product',
+      links: [
+        { label: 'Features', href: '#features' },
+        { label: 'How It Works', href: '#how-it-works' },
+        { label: 'Safety', href: '#safety' },
+        { label: 'Pricing', href: '#contact' },
+      ],
+    },
+    {
+      title: 'Apps',
+      links: [
+        { label: 'Parent App', href: parentApp.downloadUrl, external: true },
+        { label: 'Driver App', href: driverApp.downloadUrl, external: true },
+        { label: 'Admin Portal', href: adminUrl, external: true },
+        { label: 'API Docs', href: '#' },
+      ],
+    },
+    {
+      title: 'Company',
+      links: [
+        { label: 'About Us', href: '#' },
+        { label: 'Careers', href: '#' },
+        { label: 'Blog', href: '#' },
+        { label: 'Contact', href: 'mailto:hello@carribu.app' },
+      ],
+    },
+  ]
+
   return (
     <footer className="footer">
       <div className="footer-inner">
@@ -52,7 +56,13 @@ export default function Footer() {
           <div key={col.title} className="footer-col">
             <h4>{col.title}</h4>
             {col.links.map((link) => (
-              <a key={link.label} href={link.href}>
+              <a
+                key={link.label}
+                href={link.href}
+                {...(link.external && link.href !== '#'
+                  ? { target: '_blank', rel: 'noopener noreferrer' }
+                  : {})}
+              >
                 {link.label}
               </a>
             ))}
