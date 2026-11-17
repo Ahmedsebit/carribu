@@ -1,6 +1,6 @@
 # Carribu — School Transport, Reimagined
 
-Smart school transport platform that connects parents, drivers, and schools — so every ride is tracked, every child accounted for.
+School transport platform connecting parents, drivers and schools through trip visibility, student transport records and communication.
 
 ## Tech Stack
 
@@ -59,6 +59,7 @@ The app will be available at [http://localhost:5173](http://localhost:5173). Cha
 | `npm run build`     | Build the app for production (output in `dist/`)  |
 | `npm run preview`   | Preview the production build locally              |
 | `npm run lint`      | Run ESLint across the project                     |
+| `npm test`          | Check demo-draft validation and email encoding     |
 
 ## Project Structure
 
@@ -79,13 +80,54 @@ carribu/
         ├── Navbar.jsx          # Fixed navbar with scroll effect & mobile menu
         ├── Hero.jsx            # Hero section with phone mockups
         ├── Features.jsx        # Tabbed feature showcase (Parents/Drivers/Schools)
+        ├── AppPreview.jsx      # Labeled illustrative mobile / actual admin previews
+        ├── SchoolDay.jsx       # Interactive example morning and role perspectives
         ├── HowItWorks.jsx      # Step-by-step onboarding flow
         ├── Safety.jsx          # Safety & trust feature grid
-        ├── CTA.jsx             # Call-to-action section
+        ├── FAQ.jsx             # Searchable native-disclosure questions
+        ├── CTA.jsx             # Validated email-draft enquiry form (no submission)
+        ├── LandingDetails.css  # Story, previews, trust, FAQ and enquiry styling
         ├── Footer.jsx          # Footer with links & social icons
         ├── KenteBorder.jsx     # Decorative Kente-inspired divider
+        ├── ScrollJourney.jsx   # Scroll-synchronized bus, road and section stops
+        ├── ScrollJourney.css   # Responsive journey illustration and navigation
         └── Reveal.jsx          # Scroll-reveal animation wrapper
 ```
+
+## Illustrated Bus Journey
+
+Scrolling or using section links takes an illustrated bus along a winding road
+from Home through the School Day, Apps & Features, Getting Started, Trust &
+Support and Questions to the School Gates (Demo Enquiry). The floating journey
+controls navigate between all seven stops and explain each stop. Houses,
+pickup signage, trees, a crossing and school gates accompany the road.
+This is a website illustration, not live vehicle tracking.
+
+The route adapts to viewport and section-size changes, including feature tabs
+and font loading. Mobile layouts keep the road clear of the content.
+With reduced motion enabled, the moving bus is hidden and section navigation
+scrolls immediately; the road, stops and navigation remain available.
+
+## Product Previews and Enquiries
+
+The selectable school-day story uses example times and names. Parent and driver
+previews (including the hero mockups) are explicitly labeled illustrations, not
+actual screenshots. `public/images/school-admin-preview.png` shows the actual
+local admin dashboard rendered with synthetic Example Academy API fixtures.
+No real account, student data or production API response was used in the capture.
+The image can be opened full-size from the school feature tab.
+
+Onboarding covers preparation, roster validation, a controlled pilot and rollout.
+Trust and FAQ content describe location/notification limitations and direct
+schools to agree data-handling and support arrangements; no certification,
+customer endorsement, fixed pricing or response-time promise is implied.
+
+The demo form validates required school/contact details, a positive whole-number
+fleet size and any preferred date/time. It prepares a URL-encoded draft addressed
+to `hello@carribu.app`, never submits to a backend, and does not persist its data.
+Users must open their email application and send the request themselves, or use
+the copy action / selectable-text fallback. Editing the form invalidates the old
+draft. A requested time is not a confirmed booking.
 
 ## Building for Production
 

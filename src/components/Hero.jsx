@@ -1,20 +1,22 @@
 export default function Hero() {
   const handleClick = (e, targetId) => {
     e.preventDefault()
-    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById(targetId)?.scrollIntoView({ behavior: 'auto' })
   }
 
   return (
     <section className="hero" id="hero">
       <div className="hero-inner">
         <div className="hero-content">
+          <span className="journey-invitation">Hop on the Carribu journey</span>
           <h1>
             Every Child's Journey,{' '}
             <span className="highlight">Safe &amp; Seen</span>
           </h1>
           <p className="hero-subtitle">
             The smart school transport platform that connects parents, drivers,
-            and schools — so every ride is tracked, every child accounted for.
+            and schools — with clearer trip visibility, student transport records
+            and everyday communication.
           </p>
           <p className="hero-swahili">🌍 Karibu — Welcome to peace of mind.</p>
           <div className="hero-buttons">
@@ -33,8 +35,10 @@ export default function Hero() {
               ▶ See Features
             </a>
           </div>
+          <p className="journey-scroll-hint">Scroll to follow the bus from home to school.</p>
         </div>
         <div className="hero-visual">
+          <p className="hero-preview-label">Illustrative app concepts / sample data</p>
           <div className="phone-mockup secondary">
             <div className="phone-screen">
               <div

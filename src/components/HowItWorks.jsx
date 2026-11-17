@@ -3,23 +3,27 @@ import Reveal from './Reveal'
 const steps = [
   {
     number: '1',
-    title: 'Register Your School',
-    desc: "Sign up online and set up your school profile. Add your vehicles, routes, and staff. We'll help you configure everything.",
+    title: 'Plan the school setup',
+    desc: 'Identify the transport coordinator, fleet size, routes and staff roles. Decide whether each bus will use a configured tracker or phone-based location.',
+    outcome: 'A clear fleet list, named owners and tracking approach.',
   },
   {
     number: '2',
-    title: 'Enrol Students & Assign Routes',
-    desc: "Import your students, assign them to routes and pickup points. Link parents to their children's profiles for instant access.",
+    title: 'Validate the student roster',
+    desc: 'Prepare admission numbers, names and parent contacts in CSV or Excel. Preview new students, updates and row errors before confirming the valid rows, then assign routes and pickup points.',
+    outcome: 'A reviewed roster, linked families and an upload history.',
   },
   {
     number: '3',
-    title: 'Drivers Hit the Road',
-    desc: 'Drivers download the app, log in, and see their daily trips. GPS tracking starts automatically — every pickup is logged.',
+    title: 'Run a controlled pilot',
+    desc: 'Configure the location source, check device permissions and test a route with staff. Practise pickup, absence, drop-off and stale-location scenarios before involving the full school.',
+    outcome: 'A tested trip and a practical plan for missing updates.',
   },
   {
     number: '4',
-    title: 'Parents Track in Real Time',
-    desc: "Parents see their child's bus live on the map, get ETA updates, and communicate directly with the driver. Peace of mind, delivered.",
+    title: 'Invite families and roll out',
+    desc: 'Confirm parent-child access, share app instructions and check notification setup. Agree the school contact and handover procedures, then expand from the pilot at the school\'s pace.',
+    outcome: 'An agreed rollout checklist, not a one-size-fits-all deadline.',
   },
 ]
 
@@ -28,8 +32,8 @@ export default function HowItWorks() {
     <section className="section how-it-works" id="how-it-works">
       <Reveal className="section-header">
         <span className="section-tag">🔄 How It Works</span>
-        <h2>Up and Running in Days, Not Months</h2>
-        <p>Getting started with Carribu is simple — here's how.</p>
+        <h2>A practical route from setup to school run.</h2>
+        <p>Start with your people and data. Test the journey before you scale.</p>
       </Reveal>
 
       <div className="steps-container">
@@ -39,9 +43,19 @@ export default function HowItWorks() {
             <div className="step-content">
               <h3>{step.title}</h3>
               <p>{step.desc}</p>
+              <p className="step-outcome"><strong>Checkpoint:</strong> {step.outcome}</p>
             </div>
           </Reveal>
         ))}
+      </div>
+      <div className="onboarding-checklist content-width">
+        <div><span className="content-eyebrow">Bring to your demo</span><h3>Make the conversation specific to your school.</h3></div>
+        <ul>
+          <li>Approximate fleet and student numbers</li>
+          <li>Morning and afternoon route patterns</li>
+          <li>Existing trackers and driver handsets</li>
+          <li>Your current roster format and rollout goals</li>
+        </ul>
       </div>
     </section>
   )

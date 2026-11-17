@@ -13,16 +13,17 @@ export default function Navbar() {
   const handleNavClick = (e, targetId) => {
     e.preventDefault()
     setMenuOpen(false)
-    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById(targetId)?.scrollIntoView({ behavior: 'auto' })
   }
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
       <div className="nav-inner">
-        <a href="#" className="logo" onClick={(e) => e.preventDefault()}>
+        <a href="#hero" className="logo" onClick={(e) => handleNavClick(e, 'hero')}>
           Carribu<span>.</span>
         </a>
         <ul className={`nav-links${menuOpen ? ' open' : ''}`} id="navLinks">
+          <li><a href="#school-day" onClick={(e) => handleNavClick(e, 'school-day')}>The School Day</a></li>
           <li>
             <a href="#features" onClick={(e) => handleNavClick(e, 'features')}>
               Features
@@ -41,6 +42,7 @@ export default function Navbar() {
               Safety
             </a>
           </li>
+          <li><a href="#faq" onClick={(e) => handleNavClick(e, 'faq')}>FAQs</a></li>
           <li>
             <a
               href="#contact"
@@ -55,6 +57,7 @@ export default function Navbar() {
           className="hamburger"
           aria-label="Menu"
           aria-expanded={menuOpen}
+          aria-controls="navLinks"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span></span>

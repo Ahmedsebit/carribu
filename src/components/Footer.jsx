@@ -1,12 +1,5 @@
 import useAppLinks from '../hooks/useAppLinks'
 
-const socialLinks = [
-  { label: 'Twitter', icon: '𝕏' },
-  { label: 'LinkedIn', icon: 'in' },
-  { label: 'Instagram', icon: '📷' },
-  { label: 'Facebook', icon: 'f' },
-]
-
 export default function Footer() {
   const { adminUrl, parentApp, driverApp } = useAppLinks()
 
@@ -17,7 +10,7 @@ export default function Footer() {
         { label: 'Features', href: '#features' },
         { label: 'How It Works', href: '#how-it-works' },
         { label: 'Safety', href: '#safety' },
-        { label: 'Pricing', href: '#contact' },
+        { label: 'Discuss Pricing', href: '#contact' },
       ],
     },
     {
@@ -26,15 +19,14 @@ export default function Footer() {
         { label: 'Parent App', href: parentApp.downloadUrl, external: true },
         { label: 'Driver App', href: driverApp.downloadUrl, external: true },
         { label: 'Admin Portal', href: adminUrl, external: true },
-        { label: 'API Docs', href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Explore',
       links: [
-        { label: 'About Us', href: '#' },
-        { label: 'Careers', href: '#' },
-        { label: 'Blog', href: '#' },
+        { label: 'The School Day', href: '#school-day' },
+        { label: 'FAQs', href: '#faq' },
+        { label: 'Demo Enquiry', href: '#contact' },
         { label: 'Contact', href: 'mailto:hello@carribu.app' },
       ],
     },
@@ -44,12 +36,12 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <a href="#" className="logo">
+          <a href="#hero" className="logo">
             Carribu<span>.</span>
           </a>
           <p>
             Smart school transport for Africa. Connecting parents, drivers, and
-            schools to keep every child safe on every journey.
+            schools with clearer journey information and transport records.
           </p>
         </div>
         {footerColumns.map((col) => (
@@ -71,13 +63,6 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <p>&copy; 2026 Carribu. All rights reserved. Made with ❤️ in Africa.</p>
-        <div className="social-links">
-          {socialLinks.map((s) => (
-            <a key={s.label} href="#" aria-label={s.label}>
-              {s.icon}
-            </a>
-          ))}
-        </div>
       </div>
     </footer>
   )

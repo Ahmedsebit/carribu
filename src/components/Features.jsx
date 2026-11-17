@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Reveal from './Reveal'
+import AppPreview from './AppPreview'
 
 const featureData = {
   parents: {
@@ -8,12 +9,12 @@ const featureData = {
       {
         icon: '📍',
         title: 'Live Bus Tracking',
-        desc: "Watch your child's bus in real time on the map. See speed, location, and driver details — right from your phone.",
+        desc: "Follow the latest available location for your child's active trip. Check its timestamp, speed and driver details.",
       },
       {
         icon: '⏱️',
         title: 'ETA to Your Stop',
-        desc: "Know exactly when the bus will arrive at your child's pickup point. No more waiting and wondering.",
+        desc: "See an approximate arrival estimate for your child's pickup point. Actual arrival depends on traffic, trip progress and location freshness.",
       },
       {
         icon: '💬',
@@ -28,7 +29,7 @@ const featureData = {
       {
         icon: '🚫',
         title: 'Report Absence',
-        desc: 'Child staying home? Notify the driver instantly so they can skip the stop and stay on schedule.',
+        desc: 'Child staying home? Report the absence so the driver and school can plan the trip with that context.',
       },
       {
         icon: '👧',
@@ -53,12 +54,12 @@ const featureData = {
       {
         icon: '📡',
         title: 'Live GPS Broadcasting',
-        desc: 'Your location is automatically shared during active trips so parents and schools always know where you are.',
+        desc: 'Active trips use the configured vehicle tracker or phone location source. Updates depend on permissions, configuration and connectivity.',
       },
       {
         icon: '🗺️',
         title: 'Navigation to Next Stop',
-        desc: 'Get turn-by-turn directions to the next pickup or drop-off point. Never miss a stop.',
+        desc: 'Open navigation to the next pickup or drop-off point from the assigned trip itinerary.',
       },
       {
         icon: '💬',
@@ -113,6 +114,15 @@ const tabKeys = Object.keys(featureData)
 
 export default function Features() {
   const [activeTab, setActiveTab] = useState('parents')
+  const handleTabKey = event => {
+    const index = tabKeys.indexOf(activeTab)
+    const movement = { ArrowRight: 1, ArrowLeft: -1, Home: -index, End: tabKeys.length - 1 - index }
+    if (!(event.key in movement)) return
+    event.preventDefault()
+    const next = (index + movement[event.key] + tabKeys.length) % tabKeys.length
+    setActiveTab(tabKeys[next])
+    event.currentTarget.querySelectorAll('[role="tab"]')[next].focus()
+  }
 
   return (
     <section className="section features-section" id="features">
@@ -120,25 +130,27 @@ export default function Features() {
         <span className="section-tag">✨ Features</span>
         <h2>Everything Your School Transport Needs</h2>
         <p>
-          Three powerful apps, one seamless platform — built for the way African
-          schools move.
+          Explore a shared school run from the family, driver and school perspective.
         </p>
       </Reveal>
 
-      <Reveal className="feature-tabs">
+      <div className="feature-tabs" role="tablist" aria-label="Explore Carribu by role" onKeyDown={handleTabKey}>
         {tabKeys.map((key) => (
           <button
             key={key}
+            id={`tab-${key}`}
+            type="button"
             className={`feature-tab${activeTab === key ? ' active' : ''}`}
             role="tab"
             aria-selected={activeTab === key}
             aria-controls={`panel-${key}`}
+            tabIndex={activeTab === key ? 0 : -1}
             onClick={() => setActiveTab(key)}
           >
             {featureData[key].label}
           </button>
         ))}
-      </Reveal>
+      </div>
 
       {tabKeys.map((key) => (
         <div
@@ -146,7 +158,11 @@ export default function Features() {
           className={`feature-panel${activeTab === key ? ' active' : ''}`}
           id={`panel-${key}`}
           role="tabpanel"
+          aria-labelledby={`tab-${key}`}
+          hidden={activeTab !== key}
+          tabIndex={0}
         >
+          <AppPreview role={key} />
           <div className="feature-grid">
             {featureData[key].items.map((item, i) => (
               <Reveal key={i} className="feature-card">
