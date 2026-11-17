@@ -1,0 +1,85 @@
+{
+  "title": "Carribu - One connected school run",
+  "duration": 75,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "language": "en-GB",
+  "narrator": "Kokoro v1.0 / bf_emma / British English female neural voice",
+  "narrationSpeed": 0.9,
+  "music": "Original soft synthesized keys and warm sustained chord bed; ducked beneath narration",
+  "contact": "hello@carribu.app",
+  "contactStatus": "Planned mailbox; configure and test before public distribution.",
+  "scenes": [
+    {
+      "id": "welcome",
+      "start": 0,
+      "end": 9,
+      "label": "One connected school run",
+      "narration": [
+        "Carribu connects families, drivers, and the school office.",
+        "One connected school run."
+      ]
+    },
+    {
+      "id": "journey",
+      "start": 9,
+      "end": 20,
+      "label": "From home to the school gates",
+      "narration": [
+        "From home, to pickup, and on to the school gates.",
+        "Follow recorded trip updates and the latest available bus location."
+      ]
+    },
+    {
+      "id": "families",
+      "start": 20,
+      "end": 31,
+      "label": "For families",
+      "narration": [
+        "For families, see linked children and their assigned transport.",
+        "Check recorded pickup and drop-off updates, and contact the driver."
+      ]
+    },
+    {
+      "id": "drivers",
+      "start": 31,
+      "end": 42,
+      "label": "For drivers",
+      "narration": [
+        "For drivers, review assigned trips and the student list.",
+        "Record pickups, absences, and drop-offs as the run progresses."
+      ]
+    },
+    {
+      "id": "schools",
+      "start": 42,
+      "end": 55,
+      "label": "For the school office",
+      "narration": [
+        "For the school office, manage students, routes, vehicles, and drivers in one workspace.",
+        "Review trip progress with the actual Carribu admin dashboard."
+      ]
+    },
+    {
+      "id": "onboarding",
+      "start": 55,
+      "end": 65,
+      "label": "Prepare, pilot and roll out",
+      "narration": [
+        "Preview new students, updates, and errors before import.",
+        "Pilot with staff, then roll out to families."
+      ]
+    },
+    {
+      "id": "contact",
+      "start": 65,
+      "end": 75,
+      "label": "Request a school demo",
+      "narration": [
+        "See how Carribu could fit your school. Request a demo by email.",
+        "Scan the code, or use the address on screen."
+      ]
+    }
+  ]
+}

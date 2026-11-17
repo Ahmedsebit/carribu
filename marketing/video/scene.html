@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carribu | Explainer Animation Source</title>
+  <link rel="stylesheet" href="./video.css">
+</head>
+<body class="animation-source">
+  <div class="source-toolbar" aria-label="Animation preview controls">
+    <a href="./index.html">Watch the finished video</a>
+    <label for="source-position">Storyboard position</label>
+    <input id="source-position" type="range" min="0" max="74.99" value="0" step="0.01">
+    <output id="source-time" for="source-position">0:00 / 1:15</output>
+  </div>
+  <div class="stage-wrapper">
+    <main id="stage" aria-label="Carribu illustrated explainer storyboard">
+      <div id="scenes"></div>
+      <div class="film-captions" id="film-captions"><p></p></div>
+      <div class="film-progress" aria-hidden="true"><span></span></div>
+    </main>
+  </div>
+  <script type="module" src="./scene.js"></script>
+</body>
+</html>

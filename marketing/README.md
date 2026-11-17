@@ -12,6 +12,11 @@ the public website application.
 - `exports/carribu-brochure-page-1.png` and `carribu-brochure-page-2.png`: page previews.
 - `exports/carribu-flyer.png`: image version for digital sharing.
 - `brochure.html`, `flyer.html`, `styles.css` and `assets/`: editable source.
+- `exports/carribu-explainer-75s.mp4`: 75-second, 1080p landscape explainer with
+  British female neural narration, subtle original instrumental music and
+  on-screen captions.
+- `video/index.html`: video preview and transcript; see `video/README.md` for
+  the animation source, narration, captions and poster.
 
 The PDFs use RGB colour, embedded fonts and vector QR/illustration artwork.
 They have no crop marks or bleed; ask a commercial printer about its own bleed,

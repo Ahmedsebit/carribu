@@ -51,9 +51,9 @@
     <path d="M-21 118V155M129 118V155M-21 129H19V153M129 129H89V153" fill="none" stroke="#8B4513" stroke-width="4"/>
   </g>
   <path d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#E8DDC6" stroke-width="66"/>
-  <path d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#354A48" stroke-width="50"/>
+  <path data-video-road="true" d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#354A48" stroke-width="50"/>
   <path d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#FFEDC4" stroke-width="3" stroke-dasharray="14 17"/>
-  <g transform="translate(431 125) rotate(-3 75 55)">
+  <g data-video-bus="true" transform="translate(431 125) rotate(-3 75 55)">
     <ellipse cx="76" cy="93" rx="88" ry="13" fill="#354A48" opacity=".16"/>
     <path d="M-4 23Q-4 10 11 10H121Q133 10 137 23L151 50V84H-4Z" fill="url(#bus)" stroke="#9D651F" stroke-width="3"/>
     <path d="M1 22Q1 14 13 14H120" fill="none" stroke="#FFF0C1" stroke-width="4"/>

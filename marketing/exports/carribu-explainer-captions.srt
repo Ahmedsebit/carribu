@@ -1,0 +1,55 @@
+1
+00:00:00,470 --> 00:00:04,019
+Carribu connects families, drivers, and the school office.
+
+2
+00:00:05,680 --> 00:00:07,792
+One connected school run.
+
+3
+00:00:09,470 --> 00:00:12,829
+From home, to pickup, and on to the school gates.
+
+4
+00:00:14,083 --> 00:00:18,828
+Follow recorded trip updates and the latest available bus location.
+
+5
+00:00:20,470 --> 00:00:24,097
+For families, see linked children and their assigned transport.
+
+6
+00:00:25,265 --> 00:00:29,658
+Check recorded pickup and drop-off updates, and contact the driver.
+
+7
+00:00:31,470 --> 00:00:34,841
+For drivers, review assigned trips and the student list.
+
+8
+00:00:36,081 --> 00:00:40,460
+Record pickups, absences, and drop-offs as the run progresses.
+
+9
+00:00:42,470 --> 00:00:47,749
+For the school office, manage students, routes, vehicles, and drivers in one workspace.
+
+10
+00:00:49,830 --> 00:00:53,733
+Review trip progress with the actual Carribu admin dashboard.
+
+11
+00:00:55,470 --> 00:00:59,201
+Preview new students, updates, and errors before import.
+
+12
+00:01:00,556 --> 00:01:03,550
+Pilot with staff, then roll out to families.
+
+13
+00:01:05,470 --> 00:01:09,769
+See how Carribu could fit your school. Request a demo by email.
+
+14
+00:01:10,940 --> 00:01:13,870
+Scan the code, or use the address on screen.

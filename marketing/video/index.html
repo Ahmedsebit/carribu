@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carribu | One Connected School Run</title>
+  <link rel="stylesheet" href="./video.css">
+</head>
+<body class="watch-page">
+  <main class="watch-container">
+    <header class="watch-header">
+      <div><h1>One connected school run.</h1><p>Carribu / 75-second explainer / 1080p landscape / British female neural narration + subtle instrumental</p></div>
+      <a href="../brochure.html">Brochure and flyer</a>
+    </header>
+    <video controls playsinline preload="metadata" width="1920" height="1080" poster="../exports/carribu-explainer-poster.png" aria-label="Carribu animated explainer with English synthetic narration and on-screen captions">
+      <source src="../exports/carribu-explainer-75s.mp4" type="video/mp4">
+      <track src="../exports/carribu-explainer-captions.vtt" kind="captions" srclang="en-GB" label="English">
+      Your browser cannot play this video. Use the MP4 download below.
+    </video>
+    <nav class="watch-downloads" aria-label="Video downloads">
+      <a href="../exports/carribu-explainer-75s.mp4" download>Download MP4</a>
+      <a href="../exports/carribu-explainer-soundtrack.mp3" download>Audio mix (MP3)</a>
+      <a href="../exports/carribu-explainer-narration.mp3" download>Voice only (MP3)</a>
+      <a href="../exports/carribu-explainer-captions.srt" download>SRT captions</a>
+      <a href="../exports/carribu-explainer-captions.vtt" download>WebVTT captions</a>
+      <a href="../exports/carribu-explainer-poster.png" download>Poster image</a>
+      <a href="./scene.html">Editable storyboard preview</a>
+    </nav>
+    <p class="watch-description">The school-day sequence and mobile views are illustrations, not live feeds or actual mobile app screenshots. The admin preview is the actual interface rendered with synthetic demonstration data. British female narration is synthetic, generated locally using Kokoro's bf_emma neural voice. An original subtle instrumental is lowered beneath speech. The MP4 includes on-screen captions; sidecar captions are also available.</p>
+    <details>
+      <summary>Read the narration transcript</summary>
+      <div class="transcript" id="transcript"></div>
+    </details>
+    <p class="distribution-note"><strong>Before public distribution:</strong> configure and test hello@carribu.app. The approved demo contact is currently a planned mailbox. The QR code prepares an email draft; the viewer sends it from their own email app.</p>
+  </main>
+  <script type="module">
+    const response = await fetch('./storyboard.json')
+    if (response.ok) {
+      const story = await response.json()
+      for (const scene of story.scenes) {
+        const paragraph = document.createElement('p')
+        const title = document.createElement('strong')
+        title.textContent = `${scene.label}: `
+        paragraph.append(title, document.createTextNode(scene.narration.join(' ')))
+        document.getElementById('transcript').append(paragraph)
+      }
+    }
+  </script>
+</body>
+</html>

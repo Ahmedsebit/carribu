@@ -1,0 +1,90 @@
+{
+  "duration": 75,
+  "narrator": "Kokoro v1.0 / bf_emma / British English female neural voice",
+  "cues": [
+    {
+      "scene": "welcome",
+      "start": 0.47,
+      "end": 4.019,
+      "text": "Carribu connects families, drivers, and the school office."
+    },
+    {
+      "scene": "welcome",
+      "start": 5.68,
+      "end": 7.792,
+      "text": "One connected school run."
+    },
+    {
+      "scene": "journey",
+      "start": 9.47,
+      "end": 12.829,
+      "text": "From home, to pickup, and on to the school gates."
+    },
+    {
+      "scene": "journey",
+      "start": 14.083,
+      "end": 18.828,
+      "text": "Follow recorded trip updates and the latest available bus location."
+    },
+    {
+      "scene": "families",
+      "start": 20.47,
+      "end": 24.097,
+      "text": "For families, see linked children and their assigned transport."
+    },
+    {
+      "scene": "families",
+      "start": 25.265,
+      "end": 29.658,
+      "text": "Check recorded pickup and drop-off updates, and contact the driver."
+    },
+    {
+      "scene": "drivers",
+      "start": 31.47,
+      "end": 34.841,
+      "text": "For drivers, review assigned trips and the student list."
+    },
+    {
+      "scene": "drivers",
+      "start": 36.081,
+      "end": 40.46,
+      "text": "Record pickups, absences, and drop-offs as the run progresses."
+    },
+    {
+      "scene": "schools",
+      "start": 42.47,
+      "end": 47.749,
+      "text": "For the school office, manage students, routes, vehicles, and drivers in one workspace."
+    },
+    {
+      "scene": "schools",
+      "start": 49.83,
+      "end": 53.733,
+      "text": "Review trip progress with the actual Carribu admin dashboard."
+    },
+    {
+      "scene": "onboarding",
+      "start": 55.47,
+      "end": 59.201,
+      "text": "Preview new students, updates, and errors before import."
+    },
+    {
+      "scene": "onboarding",
+      "start": 60.556,
+      "end": 63.55,
+      "text": "Pilot with staff, then roll out to families."
+    },
+    {
+      "scene": "contact",
+      "start": 65.47,
+      "end": 69.769,
+      "text": "See how Carribu could fit your school. Request a demo by email."
+    },
+    {
+      "scene": "contact",
+      "start": 70.94,
+      "end": 73.87,
+      "text": "Scan the code, or use the address on screen."
+    }
+  ]
+}
