@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title description">
+  <title id="title">The Carribu school run</title>
+  <desc id="description">An illustrated yellow school bus follows a winding road from homes and a pickup sign to a school, among green trees.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#FFF8E9"/><stop offset="1" stop-color="#F5E6C8"/>
+    </linearGradient>
+    <linearGradient id="bus" x2="0" y2="1">
+      <stop stop-color="#FFD77A"/><stop offset="1" stop-color="#E8A838"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="300" rx="22" fill="url(#sky)"/>
+  <circle cx="710" cy="49" r="28" fill="#E8A838" opacity=".42"/>
+  <path d="M0 164Q120 97 267 155T534 131T795 149T1000 121V300H0Z" fill="#E1E9CC"/>
+  <path d="M0 214Q175 134 342 197T647 167T1000 178V300H0Z" fill="#C5D8AF"/>
+  <g fill="none" stroke="#97AA8B" stroke-width="2.5" stroke-linecap="round">
+    <path d="M626 48q8-10 16 0q8-10 16 0M657 72q6-8 12 0q6-8 12 0"/>
+  </g>
+  <g transform="translate(81 70)">
+    <path d="M-12 40 39 0 90 40" fill="#C1512D"/>
+    <path d="M-3 40H81V119H-3Z" fill="#FFF8F0" stroke="#8B4513" stroke-width="3"/>
+    <path d="M29 119V74H51V119" fill="#E8A838" stroke="#8B4513" stroke-width="2"/>
+    <path d="M9 55H23V73H9ZM57 55H70V73H57Z" fill="#244C54"/>
+    <path d="M10 15V-2H23V24" fill="#8B4513"/>
+  </g>
+  <g transform="translate(203 89)">
+    <path d="M0 18V103" stroke="#8B4513" stroke-width="10"/>
+    <circle cy="17" r="32" fill="#57885A"/><circle cx="18" cy="0" r="23" fill="#79A866"/>
+    <path d="m-2 57 17-17M0 65l-17-13" fill="none" stroke="#8B4513" stroke-width="5"/>
+  </g>
+  <g transform="translate(314 114)">
+    <path d="M0 15V99" stroke="#8B4513" stroke-width="6"/>
+    <rect x="-28" y="-16" width="56" height="45" rx="8" fill="#FFF8F0" stroke="#2E7D32" stroke-width="4"/>
+    <rect x="-15" y="-6" width="30" height="19" rx="4" fill="#E8A838"/>
+    <path d="M-11-2H11V5H-11Z" fill="#244C54"/>
+    <circle cx="-10" cy="15" r="3" fill="#354A48"/><circle cx="10" cy="15" r="3" fill="#354A48"/>
+  </g>
+  <g transform="translate(752 86)">
+    <path d="M0 17V105" stroke="#8B4513" stroke-width="10"/>
+    <circle cx="-12" cy="9" r="27" fill="#57885A"/><circle cx="12" cy="-2" r="30" fill="#79A866"/>
+    <circle cx="23" cy="19" r="21" fill="#57885A"/>
+  </g>
+  <g transform="translate(852 48)">
+    <path d="M-14 41 54 3 122 41" fill="#C1512D"/>
+    <path d="M-6 41H114V143H-6Z" fill="#FFF8F0" stroke="#8B4513" stroke-width="3"/>
+    <path d="M42 143V96H67V143" fill="#244C54"/>
+    <g fill="#244C54">
+      <path d="M8 57H23V75H8ZM34 57H49V75H34ZM60 57H75V75H60ZM86 57H101V75H86ZM8 92H23V110H8ZM86 92H101V110H86Z"/>
+    </g>
+    <path d="M54 3V-32H91L79-22 91-12H54" fill="#E8A838" stroke="#8B4513" stroke-width="2"/>
+    <path d="M-21 118V155M129 118V155M-21 129H19V153M129 129H89V153" fill="none" stroke="#8B4513" stroke-width="4"/>
+  </g>
+  <path d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#E8DDC6" stroke-width="66"/>
+  <path d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#354A48" stroke-width="50"/>
+  <path d="M-40 269C105 202 197 299 337 242S531 172 651 232S866 272 1040 211" fill="none" stroke="#FFEDC4" stroke-width="3" stroke-dasharray="14 17"/>
+  <g transform="translate(431 125) rotate(-3 75 55)">
+    <ellipse cx="76" cy="93" rx="88" ry="13" fill="#354A48" opacity=".16"/>
+    <path d="M-4 23Q-4 10 11 10H121Q133 10 137 23L151 50V84H-4Z" fill="url(#bus)" stroke="#9D651F" stroke-width="3"/>
+    <path d="M1 22Q1 14 13 14H120" fill="none" stroke="#FFF0C1" stroke-width="4"/>
+    <g fill="#244C54">
+      <rect x="7" y="28" width="24" height="26" rx="3"/>
+      <rect x="38" y="28" width="24" height="26" rx="3"/>
+      <rect x="69" y="28" width="24" height="26" rx="3"/>
+      <path d="M102 28H122L135 54H102Z"/>
+      <rect x="137" y="64" width="9" height="13" rx="2"/>
+    </g>
+    <path d="M10 32H25M41 32H56M72 32H87" stroke="#8EC7C6" stroke-width="2" stroke-linecap="round"/>
+    <path d="M4 61H99" stroke="#C77B21" stroke-width="3"/>
+    <text x="73" y="76" text-anchor="middle" fill="#6C4018" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.5">CARRIBU</text>
+    <circle cx="24" cy="84" r="17" fill="#263D38"/><circle cx="124" cy="84" r="17" fill="#263D38"/>
+    <circle cx="24" cy="84" r="8" fill="#D5DFCA"/><circle cx="124" cy="84" r="8" fill="#D5DFCA"/>
+    <rect x="143" y="57" width="8" height="6" rx="2" fill="#FFF8F0"/>
+    <rect x="-5" y="62" width="6" height="8" rx="2" fill="#C1512D"/>
+  </g>
+  <g fill="#556342" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">
+    <text x="122" y="38" text-anchor="middle">HOME</text>
+    <text x="313" y="73" text-anchor="middle">PICKUP</text>
+    <text x="514" y="88" text-anchor="middle">ON THE ROAD</text>
+    <text x="907" y="22" text-anchor="middle">SCHOOL</text>
+  </g>
+</svg>

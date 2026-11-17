@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A two-page Carribu product brochure for school leaders and transport coordinators.">
+  <title>Carribu | School Transport Brochure</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <nav class="screen-toolbar" aria-label="Marketing documents">
+    <strong>Carribu / two-page A4 brochure</strong>
+    <a href="./flyer.html">View flyer</a>
+    <a href="./exports/carribu-brochure.pdf" download>Download PDF</a>
+    <button type="button" onclick="window.print()">Print / save PDF</button>
+  </nav>
+
+  <main>
+    <article class="sheet cover" aria-label="Brochure page 1: the connected school run">
+      <div class="kente" aria-hidden="true"></div>
+      <div class="sheet-body">
+        <header class="brand-header">
+          <div><div class="wordmark">Carribu<span>.</span></div><p class="brand-line">SCHOOL TRANSPORT, CONNECTED</p></div>
+          <p class="edition">For school leaders<br>and transport teams</p>
+        </header>
+
+        <section class="cover-hero" aria-labelledby="cover-title">
+          <p class="eyebrow">Parents. Drivers. Schools.</p>
+          <h1 id="cover-title">One connected<br><span>school run.</span></h1>
+          <p class="lead">Bring your school office, drivers and families together with clearer trip visibility, student transport records and everyday communication.</p>
+        </section>
+
+        <figure class="journey-figure">
+          <img src="./assets/school-run.svg" width="1000" height="300" alt="An illustrated Carribu bus follows a road from home to pickup and school.">
+          <figcaption>An illustrative school-day journey, not live vehicle tracking.</figcaption>
+        </figure>
+
+        <section class="role-overview" aria-labelledby="roles-title">
+          <h2 class="section-title" id="roles-title">One journey. Three connected perspectives.</h2>
+          <div class="role-grid">
+            <section class="role-card">
+              <p class="role-name">FOR THE SCHOOL</p>
+              <h3>See the run<br>together.</h3>
+              <p>Manage students, routes, vehicles and drivers in one school workspace.</p>
+            </section>
+            <section class="role-card driver">
+              <p class="role-name">FOR THE DRIVER</p>
+              <h3>Know the<br>next stop.</h3>
+              <p>Follow assigned trips and record pickups, absences and drop-offs.</p>
+            </section>
+            <section class="role-card family">
+              <p class="role-name">FOR THE FAMILY</p>
+              <h3>Follow the<br>latest update.</h3>
+              <p>View linked children, recorded trip updates and available bus location.</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="contact-card" aria-labelledby="cover-demo">
+          <div>
+            <p class="eyebrow">The next stop is your school</p>
+            <h2 id="cover-demo">See what a connected<br>school run could look like.</h2>
+            <p>Request a demo for your transport team.</p>
+            <a class="email" href="mailto:hello@carribu.app?subject=Carribu%20school%20demo%20enquiry">hello@carribu.app</a>
+          </div>
+          <figure class="qr-block">
+            <img src="./assets/email-qr.svg" width="450" height="450" alt="QR code to prepare a demo enquiry email to hello@carribu.app.">
+            <figcaption>Scan to draft an email</figcaption>
+          </figure>
+        </section>
+      </div>
+      <footer class="page-footer"><strong>School transport for Africa.</strong><span>EXPLORE CARRIBU / 01</span></footer>
+    </article>
+
+    <article class="sheet back" aria-label="Brochure page 2: product capabilities and onboarding">
+      <div class="kente" aria-hidden="true"></div>
+      <div class="sheet-body">
+        <header class="brand-header">
+          <div><div class="wordmark">Carribu<span>.</span></div><p class="brand-line">SCHOOL TRANSPORT, CONNECTED</p></div>
+          <p class="edition">From the school office<br>to the school gates</p>
+        </header>
+        <section class="back-intro" aria-labelledby="back-title">
+          <p class="eyebrow">More context. A clearer workflow.</p>
+          <h2 class="display" id="back-title">Bring the whole<br>school run into view.</h2>
+          <p class="lead">A practical workspace for the transport team, with connected driver and parent experiences.</p>
+        </section>
+
+        <figure class="product-proof">
+          <div class="admin-shot"><img src="./assets/school-admin-preview.png" width="1440" height="1080" alt="Actual Carribu school admin dashboard with sample fleet totals and trip statuses for Example Academy."></div>
+          <figcaption>Actual admin interface, cropped for layout. All displayed data is synthetic demonstration data.</figcaption>
+        </figure>
+
+        <section class="capability-grid" aria-label="School administration capabilities">
+          <div class="capability"><h3>Review the roster before import.</h3><p>Preview CSV or Excel files, new students, updates and row errors. Keep upload history and counts.</p></div>
+          <div class="capability"><h3>Organize routes and the fleet.</h3><p>Manage vehicles, drivers, assigned routes and ordered pickup stops.</p></div>
+          <div class="capability"><h3>Follow recorded trip progress.</h3><p>Review active trips and pickup, drop-off and absence records in the school workflow.</p></div>
+          <div class="capability"><h3>Keep access in context.</h3><p>Role-based workflows and authorized school access. Parents follow their linked children.</p></div>
+        </section>
+
+        <section class="rollout" aria-labelledby="rollout-title">
+          <h2 class="section-title" id="rollout-title">Start small. Test the journey. Then roll out.</h2>
+          <div class="rollout-grid">
+            <div class="rollout-step"><span class="step-number">01 / PLAN</span><h3>Set the scope.</h3><p>Fleet, routes, staff roles and location source.</p></div>
+            <div class="rollout-step"><span class="step-number">02 / PREPARE</span><h3>Review the roster.</h3><p>Validate student data and parent links.</p></div>
+            <div class="rollout-step"><span class="step-number">03 / PILOT</span><h3>Try a staff run.</h3><p>Check devices, trip actions and missing updates.</p></div>
+            <div class="rollout-step"><span class="step-number">04 / ROLL OUT</span><h3>Bring families in.</h3><p>Agree contacts, handovers and support scope.</p></div>
+          </div>
+        </section>
+
+        <p class="expectations">Tracking and estimates depend on configuration, permissions and connectivity. Notifications are not guaranteed. Recorded actions support, rather than replace, school handover procedures.</p>
+
+        <section class="back-contact" aria-labelledby="back-demo">
+          <div><h3 id="back-demo">Your routes. Your questions. Let&apos;s talk.</h3><p>Discuss fleet needs, onboarding, support and pricing in a demo enquiry.</p></div>
+          <a href="mailto:hello@carribu.app?subject=Carribu%20school%20demo%20enquiry">hello@carribu.app</a>
+        </section>
+      </div>
+      <footer class="page-footer"><strong>A clearer school run starts with a conversation.</strong><span>EXPLORE CARRIBU / 02</span></footer>
+    </article>
+  </main>
+</body>
+</html>

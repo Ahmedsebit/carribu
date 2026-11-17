@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A one-page Carribu school transport flyer and demo invitation.">
+  <title>Carribu | School Transport Flyer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <nav class="screen-toolbar" aria-label="Marketing documents">
+    <strong>Carribu / one-page A4 flyer</strong>
+    <a href="./brochure.html">View brochure</a>
+    <a href="./exports/carribu-flyer.pdf" download>Download PDF</a>
+    <button type="button" onclick="window.print()">Print / save PDF</button>
+  </nav>
+  <main>
+    <article class="sheet flyer" aria-label="Carribu school transport flyer">
+      <div class="kente" aria-hidden="true"></div>
+      <div class="sheet-body">
+        <header class="brand-header">
+          <div><div class="wordmark">Carribu<span>.</span></div><p class="brand-line">SCHOOL TRANSPORT, CONNECTED</p></div>
+          <p class="edition">For your school.<br>For the school run.</p>
+        </header>
+
+        <section class="flyer-hero" aria-labelledby="flyer-title">
+          <p class="eyebrow">Parents. Drivers. Schools.</p>
+          <h1 id="flyer-title">One connected<br><span>school run.</span></h1>
+          <p class="lead">Bring your school office, drivers and families together with clearer trip visibility and student transport records.</p>
+        </section>
+        <figure class="journey-figure">
+          <img src="./assets/school-run.svg" width="1000" height="300" alt="An illustrated yellow Carribu bus travels from homes and a pickup point to school.">
+        </figure>
+
+        <div class="flyer-lower">
+          <section aria-labelledby="flyer-benefits-title">
+            <h2 id="flyer-benefits-title" class="section-title">Keep everyone in the loop.</h2>
+            <div class="flyer-benefits">
+              <div class="benefit"><p class="benefit-label">SCHOOLS</p><h3>A shared<br>overview.</h3><p>Organize students, routes, drivers and vehicles.</p></div>
+              <div class="benefit"><p class="benefit-label">DRIVERS</p><h3>A clearer<br>daily run.</h3><p>Follow assigned trips and record student actions.</p></div>
+              <div class="benefit"><p class="benefit-label">FAMILIES</p><h3>More<br>trip context.</h3><p>View recorded updates and available bus location.</p></div>
+            </div>
+          </section>
+          <section class="contact-card" aria-labelledby="flyer-demo">
+            <div>
+              <p class="eyebrow">The next stop is your school</p>
+              <h2 id="flyer-demo">See Carribu in action.</h2>
+              <p>Request a demo for your school.</p>
+              <a class="email" href="mailto:hello@carribu.app?subject=Carribu%20school%20demo%20enquiry">hello@carribu.app</a>
+            </div>
+            <figure class="qr-block">
+              <img src="./assets/email-qr.svg" width="450" height="450" alt="QR code to prepare a school demo enquiry email to hello@carribu.app.">
+              <figcaption>Scan to draft an email</figcaption>
+            </figure>
+          </section>
+          <p class="flyer-fineprint">Illustrated journey, not live tracking. Location updates and notification delivery depend on configuration, connectivity and device state.</p>
+        </div>
+      </div>
+      <footer class="page-footer"><strong>School transport for Africa.</strong><span>PARENTS / DRIVERS / SCHOOLS</span></footer>
+    </article>
+  </main>
+</body>
+</html>
