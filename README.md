@@ -94,6 +94,20 @@ carribu/
         └── Reveal.jsx          # Scroll-reveal animation wrapper
 ```
 
+## Website Branding
+
+The navigation and footer reuse the road-shaped Carribu "C" from the parent mobile
+app's `assets/icon.png`, with only white outer padding cropped and smaller PNG
+exports for the web logo and favicon. The existing display/body typography,
+page layout, patterned dividers and illustrated bus journey are retained.
+
+The CSS brand tokens match the parent-native and school-admin themes: road blue
+`#217F9F`, deep blue `#0B3849`, maroon `#8F2638` and logo red `#D64535`,
+with amber `#E79A25` reserved for bus and small decorative accents. Light brand
+tints keep text readable on dark sections; green is retained for recorded-status
+indicators and trees. The actual admin screenshot is not recolored. Existing
+brochure, flyer and video sources/exports retain their separate marketing design.
+
 ## Illustrated Bus Journey
 
 Scrolling or using section links takes an illustrated bus along a winding road

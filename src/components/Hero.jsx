@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="phone-screen">
               <div
                 className="phone-status-bar"
-                style={{ background: 'var(--leaf)' }}
+                style={{ background: 'var(--brand-blue)' }}
               >
                 👨‍✈️ Driver App
               </div>
@@ -55,7 +55,7 @@ export default function Hero() {
                 <div className="phone-card">
                   <div
                     className="phone-card-icon"
-                    style={{ background: '#E8F5E9' }}
+                    style={{ background: 'var(--brand-blue-tint)' }}
                   >
                     ✅
                   </div>
@@ -67,7 +67,7 @@ export default function Hero() {
                 <div className="phone-card">
                   <div
                     className="phone-card-icon"
-                    style={{ background: '#FFF3E0' }}
+                    style={{ background: 'var(--brand-maroon-light)' }}
                   >
                     ⏳
                   </div>
@@ -79,7 +79,7 @@ export default function Hero() {
                 <div className="phone-card">
                   <div
                     className="phone-card-icon"
-                    style={{ background: '#FFEBEE' }}
+                    style={{ background: 'var(--brand-maroon-light)' }}
                   >
                     🔴
                   </div>
@@ -106,7 +106,7 @@ export default function Hero() {
                 <div className="phone-card">
                   <div
                     className="phone-card-icon"
-                    style={{ background: '#E3F2FD' }}
+                    style={{ background: 'var(--brand-blue-tint)' }}
                   >
                     📍
                   </div>
@@ -118,7 +118,7 @@ export default function Hero() {
                 <div className="phone-card">
                   <div
                     className="phone-card-icon"
-                    style={{ background: '#FFF3E0' }}
+                    style={{ background: 'var(--brand-maroon-light)' }}
                   >
                     📞
                   </div>

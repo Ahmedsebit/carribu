@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import BrandLogo from './BrandLogo'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -19,8 +20,8 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
       <div className="nav-inner">
-        <a href="#hero" className="logo" onClick={(e) => handleNavClick(e, 'hero')}>
-          Carribu<span>.</span>
+        <a href="#hero" className="logo" aria-label="Carribu home" onClick={(e) => handleNavClick(e, 'hero')}>
+          <BrandLogo />
         </a>
         <ul className={`nav-links${menuOpen ? ' open' : ''}`} id="navLinks">
           <li><a href="#school-day" onClick={(e) => handleNavClick(e, 'school-day')}>The School Day</a></li>

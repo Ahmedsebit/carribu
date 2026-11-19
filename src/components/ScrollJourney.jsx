@@ -25,25 +25,25 @@ function distanceAtY(path, length, y) {
 function Bus() {
   return (
     <g className="journey-bus-art">
-      <ellipse cx="0" cy="5" rx="26" ry="43" fill="#162927" opacity=".18" />
-      <g fill="#203332">
+      <ellipse cx="0" cy="5" rx="26" ry="43" fill="var(--brand-blue-dark)" opacity=".18" />
+      <g fill="var(--brand-blue-dark)">
         <rect x="-25" y="-25" width="9" height="16" rx="3" />
         <rect x="16" y="-25" width="9" height="16" rx="3" />
         <rect x="-25" y="13" width="9" height="16" rx="3" />
         <rect x="16" y="13" width="9" height="16" rx="3" />
       </g>
       <rect x="-20" y="-39" width="40" height="78" rx="10" fill="#C77B21" />
-      <rect x="-19" y="-38" width="38" height="74" rx="9" fill="#F6BF4F" stroke="#FFF0C1" strokeWidth="2" />
-      <rect x="-14" y="-31" width="28" height="11" rx="4" fill="#244C54" />
+      <rect x="-19" y="-38" width="38" height="74" rx="9" fill="var(--brand-amber)" stroke="#FFF0C1" strokeWidth="2" />
+      <rect x="-14" y="-31" width="28" height="11" rx="4" fill="var(--brand-blue-deep)" />
       <path d="M-11 -28 H9" stroke="#8EC7C6" strokeWidth="2" strokeLinecap="round" />
       <rect x="-13" y="-15" width="26" height="32" rx="5" fill="#FFDC85" />
-      <path d="M-9 -10 H9 M-9 10 H9" stroke="#E8A838" strokeWidth="2" />
+      <path d="M-9 -10 H9 M-9 10 H9" stroke="var(--brand-amber)" strokeWidth="2" />
       <text x="0" y="4" textAnchor="middle" fill="#6C4018" fontSize="8" fontWeight="800" letterSpacing="1">BUS</text>
-      <path d="M-13 22 Q0 18 13 22 L12 30 H-12 Z" fill="#244C54" />
+      <path d="M-13 22 Q0 18 13 22 L12 30 H-12 Z" fill="var(--brand-blue-deep)" />
       <path d="M-9 23 H7" stroke="#8EC7C6" strokeWidth="2" strokeLinecap="round" />
       <rect x="-17" y="32" width="7" height="4" rx="2" fill="#FFFBE5" />
       <rect x="10" y="32" width="7" height="4" rx="2" fill="#FFFBE5" />
-      <path d="M-14 -36 H-9 M9 -36 H14" stroke="#C1512D" strokeWidth="3" strokeLinecap="round" />
+      <path d="M-14 -36 H-9 M9 -36 H14" stroke="var(--brand-red)" strokeWidth="3" strokeLinecap="round" />
     </g>
   )
 }
@@ -191,28 +191,28 @@ export default function ScrollJourney() {
             <text className="journey-stop-number" y="4" textAnchor="middle">{index + 1}</text>
             <text className="journey-stop-sign" y="-27" textAnchor="middle">{stop.sign}</text>
             {index === 0 && <g className="journey-landmark" transform="translate(-12 35)">
-              <path d="M-3 9 L12 -3 L27 9" fill="none" stroke="#C1512D" strokeWidth="4" strokeLinejoin="round" />
-              <path d="M1 8 V27 H23 V8" fill="#F5E6C8" stroke="#8B4513" strokeWidth="2" />
-              <path d="M9 27 V16 H16 V27" fill="#C1512D" />
+              <path d="M-3 9 L12 -3 L27 9" fill="none" stroke="var(--brand-red)" strokeWidth="4" strokeLinejoin="round" />
+              <path d="M1 8 V27 H23 V8" fill="var(--brand-blue-light)" stroke="var(--brand-maroon)" strokeWidth="2" />
+              <path d="M9 27 V16 H16 V27" fill="var(--brand-red)" />
             </g>}
             {index === 2 && <g className="journey-landmark" transform="translate(-12 35)">
-              <path d="M12 18 V47" stroke="#8B4513" strokeWidth="4" />
-              <rect x="-2" y="0" width="28" height="24" rx="4" fill="#FFF8F0" stroke="#2E7D32" strokeWidth="2" />
-              <text x="12" y="15" textAnchor="middle" fill="#2E7D32" fontSize="8" fontWeight="800">STOP</text>
+              <path d="M12 18 V47" stroke="var(--brand-maroon)" strokeWidth="4" />
+              <rect x="-2" y="0" width="28" height="24" rx="4" fill="var(--surface-muted)" stroke="var(--brand-blue)" strokeWidth="2" />
+              <text x="12" y="15" textAnchor="middle" fill="var(--brand-blue)" fontSize="8" fontWeight="800">STOP</text>
             </g>}
             {index < stops.length - 1 && <g className="journey-scenery" style={{ '--scenery-side': index % 2 ? -1 : 1 }}>
-              <path d="M0 5 V30" stroke="#8B4513" strokeWidth="4" />
+              <path d="M0 5 V30" stroke="var(--brand-maroon)" strokeWidth="4" />
               <circle cy="0" r="13" fill="#57885A" /><circle cx="7" cy="-7" r="9" fill="#79A866" />
             </g>}
-            {index === 4 && <g className="journey-crossing" transform="translate(-16 170)" fill="#FFF8F0" opacity=".8">
+            {index === 4 && <g className="journey-crossing" transform="translate(-16 170)" fill="var(--surface-muted)" opacity=".8">
               {[0, 9, 18, 27].map(y => <rect key={y} y={y} width="32" height="4" rx="1" />)}
             </g>}
             {index === stops.length - 1 && <g className="journey-landmark" transform="translate(-17 35)">
-              <path d="M0 10 H34 V32 H0 Z" fill="#F5E6C8" stroke="#8B4513" strokeWidth="2" />
-              <path d="M-3 10 L17 -3 L37 10" fill="#C1512D" />
-              <path d="M14 32 V20 H21 V32 M5 16 H10 M25 16 H30" fill="#244C54" stroke="#244C54" strokeWidth="2" />
-              <path d="M17 -3 V-14 H29 L25 -10 L29 -7 H17" fill="#E8A838" stroke="#8B4513" />
-              <path d="M-5 30 V47 M39 30 V47 M-5 36 H9 V47 M39 36 H25 V47" fill="none" stroke="#8B4513" strokeWidth="2" />
+              <path d="M0 10 H34 V32 H0 Z" fill="var(--brand-blue-light)" stroke="var(--brand-maroon)" strokeWidth="2" />
+              <path d="M-3 10 L17 -3 L37 10" fill="var(--brand-red)" />
+              <path d="M14 32 V20 H21 V32 M5 16 H10 M25 16 H30" fill="var(--brand-blue-deep)" stroke="var(--brand-blue-deep)" strokeWidth="2" />
+              <path d="M17 -3 V-14 H29 L25 -10 L29 -7 H17" fill="var(--brand-amber)" stroke="var(--brand-maroon)" />
+              <path d="M-5 30 V47 M39 30 V47 M-5 36 H9 V47 M39 36 H25 V47" fill="none" stroke="var(--brand-maroon)" strokeWidth="2" />
             </g>}
           </g>
         ))}

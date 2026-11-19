@@ -1,4 +1,5 @@
 import useAppLinks from '../hooks/useAppLinks'
+import BrandLogo from './BrandLogo'
 
 export default function Footer() {
   const { adminUrl, parentApp, driverApp } = useAppLinks()
@@ -36,8 +37,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <a href="#hero" className="logo">
-            Carribu<span>.</span>
+          <a href="#hero" className="logo" aria-label="Carribu home">
+            <BrandLogo />
           </a>
           <p>
             Smart school transport for Africa. Connecting parents, drivers, and

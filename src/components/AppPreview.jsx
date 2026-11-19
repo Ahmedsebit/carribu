@@ -45,11 +45,11 @@ export default function AppPreview({ role }) {
               {role === 'parents' ? <>
                 <div className="preview-map" aria-hidden="true">
                   <svg viewBox="0 0 260 130">
-                    <path d="M0 25 H260 M0 90 H260 M65 0 V130 M190 0 V130" stroke="#FFF8F0" strokeWidth="16" />
-                    <path d="M32 100 H96 Q126 100 126 70 V38 H211" fill="none" stroke="#2E7D32" strokeWidth="6" strokeLinecap="round" />
-                    <circle cx="32" cy="100" r="8" fill="#FFF8F0" stroke="#2E7D32" strokeWidth="3" />
-                    <rect x="114" y="56" width="24" height="16" rx="4" fill="#E8A838" stroke="#8B4513" strokeWidth="2" />
-                    <circle cx="211" cy="38" r="8" fill="#C1512D" stroke="#FFF8F0" strokeWidth="3" />
+                    <path d="M0 25 H260 M0 90 H260 M65 0 V130 M190 0 V130" stroke="var(--surface-muted)" strokeWidth="16" />
+                    <path d="M32 100 H96 Q126 100 126 70 V38 H211" fill="none" stroke="var(--brand-blue)" strokeWidth="6" strokeLinecap="round" />
+                    <circle cx="32" cy="100" r="8" fill="var(--surface-muted)" stroke="var(--brand-blue)" strokeWidth="3" />
+                    <rect x="114" y="56" width="24" height="16" rx="4" fill="var(--brand-amber)" stroke="var(--brand-maroon)" strokeWidth="2" />
+                    <circle cx="211" cy="38" r="8" fill="var(--brand-red)" stroke="var(--surface-muted)" strokeWidth="3" />
                   </svg>
                   <span>Illustration, not a live map</span>
                 </div>
